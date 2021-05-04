@@ -1,0 +1,58 @@
+.main {
+  background-color: var(--white);
+}
+
+.scrollIcon {
+  font-size: 30px;
+}
+
+.scrollIcon:hover {
+  cursor: pointer;
+}
+
+.sectionOne {
+  display: grid;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTwo {
+  display: grid;
+  padding: 10vh 0;
+  height: 70vh;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 8rem;
+  margin-bottom: 10vh;
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  text-align: left;
+  width: 30vw;
+  line-height: 2em;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-indent: -0px;
+}
+
+.link:before {
+  content: "-";
+  text-indent: -0px;
+}

@@ -1,0 +1,24 @@
+.main {
+  padding: 0 var(--side-padding-medium);
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.column {
+  display: grid;
+  align-items: center;
+}
+
+.one {
+  justify-content: start;
+}
+
+.two {
+  justify-content: end;
+}
+
+.link {
+  display: inline;
+  margin-left: 2vw;
+}
