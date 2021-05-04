@@ -12,7 +12,7 @@ const Home = () => {
     <div className={styles.main}>
       <div className={styles.sectionOne}>
         <h1 className={styles.heading}>
-          Thanks for stopping By!.
+          Hello. My Name Is Amir.
         </h1>
       </div>
       <div className={styles.sectionTwo}>
