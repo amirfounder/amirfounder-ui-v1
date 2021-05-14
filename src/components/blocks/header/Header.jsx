@@ -6,7 +6,7 @@ const Header = () => {
   return(
     <div className={styles.main}>
       <div className={`${styles.column} ${styles.one}`}>
-        <Link to="/">Amir Sharapov</Link>
+        <Link to="/" className={styles.logo}>Amir Sharapov</Link>
       </div>
       <div className={`${styles.column} ${styles.two}`}>
         <ul>

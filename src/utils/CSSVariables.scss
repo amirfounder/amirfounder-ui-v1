@@ -8,6 +8,10 @@
   // OTHER
   --side-padding-small: 3vw;
   --side-padding-medium: 5vw;
-  --side-padding-large: 10vw;  
+  --side-padding-large: 10vw;
+
+  // DEFAULTS
+
+  --side-padding-default: var(--side-padding-medium)
 
 }
