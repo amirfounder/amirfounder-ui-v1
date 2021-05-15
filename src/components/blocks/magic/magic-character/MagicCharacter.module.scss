@@ -1,0 +1,25 @@
+::selection {
+  background-color: #bbb;
+}
+
+.main {
+  color: black;
+}
+
+.main:hover {
+  color: #bbb;
+}
+
+.main:not(:hover) {
+  animation-name: magicMoment;
+  animation-duration: 3s;
+}
+
+@keyframes magicMoment {
+  from {
+    color: #bbb;
+  }
+  to {
+    color: black
+  }
+}

@@ -1,17 +1,15 @@
 import React from 'react';
+import MagicHeading from '../../blocks/wrappers/magic-heading/MagicHeading';
 import styles from './Home.module.scss'
-import { Link } from 'react-router-dom';
 
 const Home = () => {
 
-  const handleScroll = (e) => {
-    // scroll.scrollTotop();
-  } 
-
   return(
     <div className={styles.main}>
-      <div className={styles.text}>
-        Hello there. My Name is Amir Sharapov. I'm a Software Engineer in the Chicago-Land Area.
+      <div className={styles.heading}>
+        <MagicHeading>
+          Hello there. My Name is Amir Sharapov. I'm a Software Engineer in the Chicago-Land Area.
+        </MagicHeading>
       </div>
     </div>
   )

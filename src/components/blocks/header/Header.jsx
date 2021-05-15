@@ -1,18 +1,20 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import { Link } from 'react-router-dom';
+import MagicLink from '../wrappers/magic-link/MagicLink';
+import MagicListItem from '../wrappers/magic-list-item/MagicListItem';
 
 const Header = () => {
   return(
     <div className={styles.main}>
       <div className={`${styles.column} ${styles.one}`}>
-        <Link to="/" className={styles.logo}>Amir Sharapov</Link>
+        <MagicLink to="/" className={styles.logo}>Amir Sharapov</MagicLink>
       </div>
       <div className={`${styles.column} ${styles.two}`}>
         <ul>
-        <li className={styles.link}><Link to="/about">About</Link></li>
-        <li className={styles.link}><Link to="/projects">Projects</Link></li>
-        <li className={styles.link}><Link to="/contact">Contact</Link></li>
+          <MagicListItem><MagicLink to="/about">About</MagicLink></MagicListItem>
+          <MagicListItem><MagicLink to="/projects">Projects</MagicLink></MagicListItem>
+          <MagicListItem><MagicLink to="/contact">Contact</MagicLink></MagicListItem>
         </ul>
       </div>
     </div>

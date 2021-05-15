@@ -1,6 +1,6 @@
 .main {
   padding: 0 var(--side-padding-medium);
-  height: 12vh;
+  height: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -18,13 +18,14 @@
   justify-content: end;
 }
 
-.link {
+.li {
+  margin-left: 4vw;
   display: inline;
-  margin-left: 2vw;
+
 }
 
 .logo {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
 }

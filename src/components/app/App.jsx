@@ -8,6 +8,7 @@ import Contact from '../pages/contact/Contact';
 import IdleClicker from '../mini-apps/idle-clicker/main/IdleClicker';
 import MemeCreator from '../mini-apps/meme-creator/main/MemeCreator';
 import Footer from '../blocks/footer/Footer';
+import Page from '../blocks/wrappers/page/Page';
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
       <div className={styles.page}>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/about" render={() => <Page><About /></Page>}/>
+          <Route exact path="/projects" render={() => <Page><Projects /></Page>} />
+          <Route exact path="/contact" render={() => <Page><Contact /></Page>} />
           <Route exact path="/mini-games/idle-clicker" component={IdleClicker} />
           <Route exact path="/mini-games/meme-creator" component={MemeCreator} />
         </Switch>

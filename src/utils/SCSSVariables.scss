@@ -1,0 +1,35 @@
+:root {
+
+  // COLORS
+  --white: white;
+  --light-light-gray: #f4f4f4;
+  --black: black;
+
+  // FONT SIZE
+
+  --big-three: 40px;
+  --big-two: 35px;
+  --big-one: 30px;
+  --medium: 25px;
+  --small-one: 20px;
+  --small-two: 18px;
+  --small-three: 16px;
+
+  --h1-size: var(--big-two);
+  --h2-size: var(--big-one);
+  --h3-size: var(--medium);
+  --h4-size: var(--small-one);
+  --h5-size: var(--small-two);
+  --h6-size: var(--small-three);
+
+  // OTHER
+  --side-padding-small: 3vw;
+  --side-padding-medium: 5vw;
+  --side-padding-big: 10vw;
+
+  // DEFAULTS
+
+  --side-padding-default: var(--side-padding-medium);
+  --heading-margin-top: 18vh;
+
+}

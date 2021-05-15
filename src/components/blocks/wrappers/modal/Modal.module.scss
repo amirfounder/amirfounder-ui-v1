@@ -1,0 +1,31 @@
+.background {
+  background-color: rgba(0,0,0,.2);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: grid;
+}
+
+.content {
+  background-color: white;
+  padding: 20px;
+  justify-self: center;
+  align-self: center;
+  width: 30vw;
+  border-radius: 5px;
+  animation-name: fadeInBottom;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
