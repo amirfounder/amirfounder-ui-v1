@@ -1,15 +1,17 @@
 import React from 'react';
-import styles from './Contact.module.scss'
-import MagicHeading from '../../blocks/wrappers/magic-heading/MagicHeading';
-import MagicParagraph from '../../blocks/wrappers/magic-paragraph/MagicParagraph';
+import Heading from '../../wrappers/html-wrappers/heading/Heading';
+import Paragraph from '../../wrappers/html-wrappers/paragraph/Paragraph';
+import MagicText from '../../wrappers/magic-wrappers/magic-text/MagicText';
 
 const Contact = () => {
   return(
-    <div className={styles.main}>
-      <div>
-        <MagicHeading>Contact</MagicHeading>
-        <MagicParagraph>Hello there</MagicParagraph>
-      </div>
+    <div>
+      <Heading>
+        <MagicText>
+          Contact
+        </MagicText>
+      </Heading>
+      <Paragraph>Email me at </Paragraph>
     </div>
   )
 }

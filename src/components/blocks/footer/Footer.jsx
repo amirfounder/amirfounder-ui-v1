@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import MagicText from '../magic/magic-text/MagicText'
+
+import MagicLink from '../../wrappers/magic-wrappers/magic-link/MagicLink'
+import MagicText from '../../wrappers/magic-wrappers/magic-text/MagicText'
+import ListItem from '../../wrappers/html-wrappers/list-item/ListItem'
 import Settings from '../settings/Settings'
-import MagicLink from '../wrappers/magic-link/MagicLink'
-import MagicListItem from '../wrappers/magic-list-item/MagicListItem'
 import styles from './Footer.module.scss'
 
 const Footer = () => {
@@ -44,8 +44,8 @@ const Footer = () => {
       </div>
       <div className={styles.two}>
         <ul>
-          <MagicListItem><MagicLink onClick={toggleShowSettings}>Settings</MagicLink></MagicListItem>
-          <MagicListItem><MagicLink to="/">Privacy Policy</MagicLink></MagicListItem>
+          <ListItem><MagicLink onClick={toggleShowSettings}>Settings</MagicLink></ListItem>
+          <ListItem><MagicLink to="/">Privacy Policy</MagicLink></ListItem>
         </ul>
         <Settings
         show={showSettings}

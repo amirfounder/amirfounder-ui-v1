@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './MagicCharacter.module.scss'
 
-const MagicCharacter = ({ character }) => {
+const MagicCharacter = ({ children }) => {
 
   return(
     <span
       className={styles.main}
     >
-      {character}
+      {children}
     </span>
   )
 }

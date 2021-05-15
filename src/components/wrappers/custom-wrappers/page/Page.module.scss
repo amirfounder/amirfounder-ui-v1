@@ -1,0 +1,8 @@
+.main {
+  padding:
+    var(--heading-margin-top)
+    calc(var(--side-padding-default) + 55%)
+    0
+    var(--side-padding-default);
+  height: calc(80vh - var(--heading-margin-top));
+}

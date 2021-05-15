@@ -1,14 +1,18 @@
 import React from 'react';
-import MagicHeading from '../../blocks/wrappers/magic-heading/MagicHeading';
-import MagicParagraph from '../../blocks/wrappers/magic-paragraph/MagicParagraph';
+import Heading from '../../wrappers/html-wrappers/heading/Heading';
+import Paragraph from '../../wrappers/html-wrappers/paragraph/Paragraph';
 
 const About = () => {
   return(
-    <div>
-      <MagicHeading>About</MagicHeading>
-      <MagicParagraph>Hello. My name is Amir. I am a Software Engineer</MagicParagraph>
-      <MagicParagraph>Another one</MagicParagraph>
-    </div>
+    <>
+      <Heading>About</Heading>
+      <Paragraph>
+        Hello. My name is Amir. I am a Software Engineer in the Chicago-Land area...
+      </Paragraph>
+      <Paragraph>
+        I enjoy spending my time coding and 
+      </Paragraph>
+    </>
   )
 }
 

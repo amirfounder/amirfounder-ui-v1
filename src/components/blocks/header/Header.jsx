@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './Header.module.scss';
-import { Link } from 'react-router-dom';
-import MagicLink from '../wrappers/magic-link/MagicLink';
-import MagicListItem from '../wrappers/magic-list-item/MagicListItem';
+import MagicLink from '../../wrappers/magic-wrappers/magic-link/MagicLink';
+import ListItem from '../../wrappers/html-wrappers/list-item/ListItem';
 
 const Header = () => {
   return(
@@ -12,9 +11,9 @@ const Header = () => {
       </div>
       <div className={`${styles.column} ${styles.two}`}>
         <ul>
-          <MagicListItem><MagicLink to="/about">About</MagicLink></MagicListItem>
-          <MagicListItem><MagicLink to="/projects">Projects</MagicLink></MagicListItem>
-          <MagicListItem><MagicLink to="/contact">Contact</MagicLink></MagicListItem>
+          <ListItem><MagicLink to="/about">About</MagicLink></ListItem>
+          <ListItem><MagicLink to="/projects">Projects</MagicLink></ListItem>
+          <ListItem><MagicLink to="/contact">Contact</MagicLink></ListItem>
         </ul>
       </div>
     </div>
