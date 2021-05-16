@@ -1,6 +1,26 @@
+.inherit {
+  display: inherit;
+  font-size: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--theme-color);
+}
+
 .main {
   display: inline;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
+}
+
+.inherit, .main {
   color: black;
+  display: inline;
+}
+
+.inherit:hover, .main:hover {
+  color: var(--theme-color);
+}
+
+.inherit:not(:hover), .main:not(:hover) {
+  color: black;
+  transition-duration: 2s;
 }

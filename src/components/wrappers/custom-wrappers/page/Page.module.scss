@@ -1,8 +1,10 @@
 .main {
   padding:
     var(--heading-margin-top)
-    calc(var(--side-padding-default) + 55%)
+    calc(var(--side-padding) + 55%)
     0
-    var(--side-padding-default);
-  height: calc(80vh - var(--heading-margin-top));
+    var(--side-padding);
+  height: calc(84vh - var(--heading-margin-top));
+  pointer-events: none;
+  background-color: transparent;
 }

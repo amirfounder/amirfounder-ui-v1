@@ -2,8 +2,8 @@
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  padding: 0 var(--side-padding-default);
-  height: 10vh;
+  padding: 0 var(--side-padding);
+  height: 8vh;
 }
 
 .column {

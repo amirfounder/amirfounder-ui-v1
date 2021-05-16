@@ -11,7 +11,8 @@ const Modal = ({children, show, setShow}) => {
   }
 
   return(
-    <div hidden={!show}
+    <div
+      hidden={!show}
       onKeyDown={handleKeyDown}
     >
       <div className={styles.background}>

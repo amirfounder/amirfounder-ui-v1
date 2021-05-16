@@ -1,0 +1,9 @@
+.main {
+  background-color: #bbb;
+  padding: var(--button-padding);
+  border: none;
+}
+
+.main:hover {
+  cursor: pointer;
+}

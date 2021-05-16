@@ -1,0 +1,18 @@
+.main {
+  width: 20vw;
+  height: 33vh;
+  display: inline-block;
+}
+
+.colorOptions {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  row-gap: 15px;
+  column-gap: 15px;
+}
+
+.colorOption {
+  height: 25px;
+  width: 100%;
+  display: inline;
+}

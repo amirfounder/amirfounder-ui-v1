@@ -5,7 +5,7 @@
   --light-light-gray: #f4f4f4;
   --black: black;
 
-  // FONT SIZE
+  // FONT SIZES
 
   --big-three: 40px;
   --big-two: 35px;
@@ -22,14 +22,23 @@
   --h5-size: var(--small-two);
   --h6-size: var(--small-three);
 
-  // OTHER
-  --side-padding-small: 3vw;
-  --side-padding-medium: 5vw;
+  // PADDING
+
   --side-padding-big: 10vw;
+  --side-padding-medium: 5vw;
+  --side-padding-small: 3vw;
+
+  --button-padding-big: 14px 40px;
+  --button-padding-medium: 10px 30px;
+  --button-padding-small: 8px 24px;
 
   // DEFAULTS
 
-  --side-padding-default: var(--side-padding-medium);
-  --heading-margin-top: 18vh;
+  --side-padding: var(--side-padding-small);
+  --button-padding: var(--button-padding-small);
+  --heading-margin-top: 20vh;
+
+  --theme-color: #bbb;
+  --theme-highlight-color: #bbb;
 
 }

@@ -1,5 +1,5 @@
 ::selection {
-  background-color: #bbb;
+  background-color: var(--theme-highlight-color);
 }
 
 .main {
@@ -7,19 +7,10 @@
 }
 
 .main:hover {
-  color: #bbb;
+  color: var(--theme-color);
 }
 
 .main:not(:hover) {
-  animation-name: magicMoment;
-  animation-duration: 3s;
-}
-
-@keyframes magicMoment {
-  from {
-    color: #bbb;
-  }
-  to {
-    color: black
-  }
+  color: black;
+  transition-duration: 3s;
 }

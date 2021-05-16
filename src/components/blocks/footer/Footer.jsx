@@ -3,13 +3,14 @@ import React, { useEffect, useState } from 'react'
 import MagicLink from '../../wrappers/magic-wrappers/magic-link/MagicLink'
 import MagicText from '../../wrappers/magic-wrappers/magic-text/MagicText'
 import ListItem from '../../wrappers/html-wrappers/list-item/ListItem'
-import Settings from '../settings/Settings'
+import ThemePicker from '../theme-picker/ThemePicker'
 import styles from './Footer.module.scss'
+import { useLocation } from 'react-router'
 
 const Footer = () => {
 
   const [year, setYear] = useState()
-  const [showSettings, setShowSettings] = useState(false)
+  const [showThemePicker, setShowThemePicker] = useState(false)
 
   /**
    * Get the current year
@@ -29,29 +30,33 @@ const Footer = () => {
   }, [])
 
   /**
-   * Toggle the show settings
+   * Toggle showThemePicker
    */
-  const toggleShowSettings = () => {
-    showSettings ? setShowSettings(false) : setShowSettings(true)
+  const toggleShowThemePicker = () => {
+    showThemePicker ? setShowThemePicker(false) : setShowThemePicker(true)
   }
+
+  const location = useLocation()
 
   return(
     <div className={styles.main}>
       <div className={styles.one}>
         <div className={styles.copyright}>
-          <MagicText text={`Copyright © ${year} All Rights Reserved`} />
+          <MagicText>
+            {`Copyright © ${year} All Rights Reserved`}
+          </MagicText>
         </div>
       </div>
       <div className={styles.two}>
         <ul>
-          <ListItem><MagicLink onClick={toggleShowSettings}>Settings</MagicLink></ListItem>
+          <ListItem><MagicLink to={location.pathname} onClick={toggleShowThemePicker}>Customize Theme</MagicLink></ListItem>
           <ListItem><MagicLink to="/">Privacy Policy</MagicLink></ListItem>
         </ul>
-        <Settings
-        show={showSettings}
-        setShow={setShowSettings}
-        toggleShow={toggleShowSettings}
-      />
+        <ThemePicker
+          show={showThemePicker}
+          setShow={setShowThemePicker}
+          toggleShow={toggleShowThemePicker}
+        />
       </div>
     </div>
   )
