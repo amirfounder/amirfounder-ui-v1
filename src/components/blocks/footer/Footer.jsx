@@ -42,9 +42,7 @@ const Footer = () => {
     <div className={styles.main}>
       <div className={styles.one}>
         <div className={styles.copyright}>
-          <MagicText>
-            {`Copyright © ${year} All Rights Reserved`}
-          </MagicText>
+        <MagicText>{`Copyright © ${year} All Rights Reserved`}</MagicText>
         </div>
       </div>
       <div className={styles.two}>

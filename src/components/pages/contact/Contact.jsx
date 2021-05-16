@@ -14,10 +14,16 @@ const Contact = () => {
       </Heading>
       <Paragraph>
         <MagicText>Email: </MagicText>
-        <MagicLink className="inherit">amir@amirfounder.com</MagicLink>
+        <MagicLink
+          className="inherit"
+          internal={false}
+          to="mailto:amirfounder.com"
+        >
+          amir@amirfounder.com
+        </MagicLink>
         <br/>
         <MagicText>Text: </MagicText>
-        <MagicLink className="inherit">331 255 6927</MagicLink>
+        <MagicLink className="inherit">(331) 255 - 6927</MagicLink>
       </Paragraph>
     </div>
   )

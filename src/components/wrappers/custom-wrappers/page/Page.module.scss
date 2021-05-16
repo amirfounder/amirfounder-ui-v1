@@ -4,7 +4,5 @@
     calc(var(--side-padding) + 55%)
     0
     var(--side-padding);
-  height: calc(84vh - var(--heading-margin-top));
-  pointer-events: none;
-  background-color: transparent;
+  height: calc(80vh - var(--heading-margin-top));
 }

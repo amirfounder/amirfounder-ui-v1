@@ -13,7 +13,7 @@ const About = () => {
       </Heading>
       <Paragraph>
         <MagicText>
-          Hello. My name is Amir. I am a Software Engineer in the Chicago-Land area. More information coming soon...
+          Hello. My name is Amir. I'm a full-stack Software Engineer in the Chicago-Land area. More information coming soon...
         </MagicText>
       </Paragraph>
     </>

@@ -8,9 +8,9 @@ const Home = () => {
   return(
     <div className={styles.main}>
       <div className={styles.heading}>
-        <Heading>
+        <Heading underline={false}>
           <MagicText>
-            Hello there. My Name is Amir Sharapov. I'm a Software Engineer in the Chicago-Land Area.
+            Hello there. My Name's Amir. I'm a full-stack Software Engineer in the Chicago-Land Area.
           </MagicText>
         </Heading>
       </div>

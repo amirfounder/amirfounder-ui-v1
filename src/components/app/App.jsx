@@ -9,12 +9,26 @@ import Contact from '../pages/contact/Contact';
 import Footer from '../blocks/footer/Footer';
 import { useEffect } from 'react';
 import Page from '../wrappers/custom-wrappers/page/Page';
+import { useMainContext } from '../../context/MainContext';
+import { getCookieValue } from '../../utils/CookieService';
+import PageNotFound from '../pages/page-not-found/PageNotFound';
 
 function App() {
 
+  const {
+    setThemeColor,
+    setThemeHighlightColor
+  } = useMainContext()
+
   useEffect(() => {
-    console.log('You\re a wizard, Harry!... https://rb.gy/w7s3bv');
-  })
+    console.log('You\re a wizard, Harry!... https://rb.gy/w7s3bv')
+    const cookieThemeColor = getCookieValue('themeColor')
+    const cookieThemeHighlightColor = getCookieValue('themeHighlightColor')
+    setThemeColor(cookieThemeColor)
+    setThemeHighlightColor(cookieThemeHighlightColor)
+    document.documentElement.style.setProperty('--theme-color', cookieThemeColor)
+    document.documentElement.style.setProperty('--theme-highlight-color', cookieThemeHighlightColor)
+  }, [])
 
   return (
     <div className={styles.main}>
@@ -24,6 +38,8 @@ function App() {
           <Route exact path="/about" render={() => <Page><About /></Page>}/>
           <Route exact path="/projects" render={() => <Page><Projects /></Page>} />
           <Route exact path="/contact" render={() => <Page><Contact /></Page>} />
+          <Route exact path="/page-not-found" render={() => <Page><PageNotFound /></Page>} />
+          <Route path="/" render={() => <Page><PageNotFound /></Page>} />
         </Switch>
       <Footer />
     </div>

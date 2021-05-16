@@ -1,6 +1,6 @@
 .main {
   padding: 0 var(--side-padding);
-  height: 8vh;
+  height: 10vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -16,12 +16,6 @@
 
 .two {
   justify-content: end;
-}
-
-.li {
-  margin-left: 4vw;
-  display: inline;
-
 }
 
 .logo {

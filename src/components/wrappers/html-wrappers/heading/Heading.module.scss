@@ -7,6 +7,14 @@
   margin-bottom: 1em;
 }
 
+.underline::after {
+  content: "";
+  display: block;
+  width: 10%;
+  border-bottom: 8px solid var(--theme-highlight-color);
+  margin-top: 8px;
+}
+
 .italic {
   font-style: italic;
 }

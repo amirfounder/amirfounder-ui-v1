@@ -1,5 +1,6 @@
 .main {
-  background-color: #bbb;
+  background-color: var(--theme-color);
+  color: white;
   padding: var(--button-padding);
   border: none;
 }

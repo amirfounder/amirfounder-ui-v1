@@ -5,17 +5,12 @@ import Modal from '../../wrappers/custom-wrappers/modal/Modal'
 import MagicText from '../../wrappers/magic-wrappers/magic-text/MagicText'
 import Button from '../../wrappers/html-wrappers/button/Button'
 import ColorToggle from '../color-toggle/ColorToggle'
+import { colorPalette } from '../../../utils/Constants'
 
 const Settings = ({show, setShow, toggleShow}) => {
 
   const [activColor, setActiveColor] = useState('red')
-  const [colors, setColors] = useState([
-    'red',
-    'orange',
-    'green',
-    'blue',
-    'purple'
-  ])
+  const [colors, setColors] = useState(colorPalette)
   
   return(
     <Modal
@@ -29,16 +24,21 @@ const Settings = ({show, setShow, toggleShow}) => {
         >
           <MagicText>Choose a Theme</MagicText>
         </Heading>
-        <div className={styles.colorOptions}>
+        <div className={styles.colorPalette}>
           {colors.map((color) => (
             <ColorToggle
+              key={color}
               color={color}
               activeColor={activColor}
               setActiveColor={setActiveColor}
             />
           ))}
         </div>
-        <Button onClick={toggleShow}>Click me</Button>
+        <Button
+          onClick={toggleShow}
+        >
+          Exit Theme Picker 
+        </Button>
       </div>
     </Modal>
   )
