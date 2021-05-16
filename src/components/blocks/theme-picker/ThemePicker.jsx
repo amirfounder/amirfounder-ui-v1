@@ -10,7 +10,7 @@ import { colorPalette } from '../../../utils/Constants'
 const Settings = ({show, setShow, toggleShow}) => {
 
   const [activColor, setActiveColor] = useState('red')
-  const [colors, setColors] = useState(colorPalette)
+  const [colors] = useState(colorPalette)
   
   return(
     <Modal

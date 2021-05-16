@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { useMainContext } from '../../../context/MainContext'
 import styles from './ColorToggle.module.scss'
 

@@ -28,7 +28,7 @@ function App() {
     setThemeHighlightColor(cookieThemeHighlightColor)
     document.documentElement.style.setProperty('--theme-color', cookieThemeColor)
     document.documentElement.style.setProperty('--theme-highlight-color', cookieThemeHighlightColor)
-  }, [])
+  }, [setThemeColor, setThemeHighlightColor])
 
   return (
     <div className={styles.main}>
