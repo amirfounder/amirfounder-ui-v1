@@ -12,6 +12,7 @@ import Page from '../wrappers/custom-wrappers/page/Page';
 import { useMainContext } from '../../context/MainContext';
 import { getCookieValue } from '../../utils/CookieService';
 import PageNotFound from '../pages/page-not-found/PageNotFound';
+import Pipeline from '../pages/pipeline/Pipeline';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" render={() => <Page><About /></Page>}/>
           <Route exact path="/projects" render={() => <Page><Projects /></Page>} />
+          <Route exact path="/pipeline" render={() => <Page><Pipeline /></Page>} />
           <Route exact path="/contact" render={() => <Page><Contact /></Page>} />
           <Route exact path="/page-not-found" render={() => <Page><PageNotFound /></Page>} />
           <Route path="/" render={() => <Page><PageNotFound /></Page>} />

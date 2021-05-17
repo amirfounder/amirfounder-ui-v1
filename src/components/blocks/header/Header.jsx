@@ -11,9 +11,10 @@ const Header = () => {
       </div>
       <div className={`${styles.column} ${styles.two}`}>
         <ul>
-          <ListItem><MagicLink to="/about">About</MagicLink></ListItem>
-          <ListItem><MagicLink to="/projects">Projects</MagicLink></ListItem>
-          <ListItem><MagicLink to="/contact">Contact</MagicLink></ListItem>
+          <ListItem className={styles.navLink}><MagicLink to="/about">About</MagicLink></ListItem>
+          <ListItem className={styles.navLink}><MagicLink to="/projects">Projects</MagicLink></ListItem>
+          <ListItem className={styles.navLink}><MagicLink to="/pipeline">Pipeline</MagicLink></ListItem>
+          <ListItem className={styles.navLink}><MagicLink to="/contact">Contact</MagicLink></ListItem>
         </ul>
       </div>
     </div>

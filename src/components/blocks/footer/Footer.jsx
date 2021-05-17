@@ -47,8 +47,8 @@ const Footer = () => {
       </div>
       <div className={styles.two}>
         <ul>
-          <ListItem><MagicLink to={location.pathname} onClick={toggleShowThemePicker}>Customize Theme</MagicLink></ListItem>
-          <ListItem><MagicLink to="/">Privacy Policy</MagicLink></ListItem>
+          <ListItem className={styles.navLink}><MagicLink to={location.pathname} onClick={toggleShowThemePicker}>Customize Theme</MagicLink></ListItem>
+          <ListItem className={styles.navLink}><MagicLink to="/">Privacy Policy</MagicLink></ListItem>
         </ul>
         <ThemePicker
           show={showThemePicker}

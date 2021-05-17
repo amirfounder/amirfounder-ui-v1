@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './ListItem.module.scss'
 
-const ListItem = ({children}) => {
+const ListItem = ({children, className}) => {
   return(
-    <li className={styles.main}>
+    <li className={className ? className : styles.main}>
       {children}
     </li>
   )
