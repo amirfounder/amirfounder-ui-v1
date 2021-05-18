@@ -1,5 +1,10 @@
 .main {
   background-color: #f4f4f4;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 .grid {
@@ -31,4 +36,13 @@ div.content > .column:nth-of-type(even) {
 
 .content>.column {
   min-height: 20vh;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
