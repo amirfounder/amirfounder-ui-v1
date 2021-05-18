@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
-import App from './components/app/App';
+import App from './app/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { MainProvider } from './context/MainContext';
+import { IdleClickerProvider } from './context/IdleClickerContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <MainProvider>
-      <Router>
-        <App />
-      </Router>
+    <IdleClickerProvider>
+        <Router>
+          <App />
+        </Router>
+      </IdleClickerProvider>
     </MainProvider>
   </React.StrictMode>,
   document.getElementById('root')

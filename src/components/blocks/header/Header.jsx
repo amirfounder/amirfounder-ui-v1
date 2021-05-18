@@ -14,6 +14,7 @@ const Header = () => {
           <ListItem className={styles.navLink}><MagicLink to="/about">About</MagicLink></ListItem>
           <ListItem className={styles.navLink}><MagicLink to="/projects">Projects</MagicLink></ListItem>
           <ListItem className={styles.navLink}><MagicLink to="/pipeline">Pipeline</MagicLink></ListItem>
+          <ListItem className={styles.navLink}><MagicLink to="/idle-clicker">Idle Clicker</MagicLink></ListItem>
           <ListItem className={styles.navLink}><MagicLink to="/contact">Contact</MagicLink></ListItem>
         </ul>
       </div>

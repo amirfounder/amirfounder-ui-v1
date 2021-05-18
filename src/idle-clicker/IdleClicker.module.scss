@@ -1,0 +1,31 @@
+.main {
+  min-height: 70vh;
+  padding: 0 var(--side-padding);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.clickerShape {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: var(--theme-color);
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  transition-duration: .5s;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  color: white;
+  cursor: default;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}

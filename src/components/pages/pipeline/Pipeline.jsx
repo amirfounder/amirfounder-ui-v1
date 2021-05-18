@@ -16,7 +16,7 @@ const Pipeline = () => {
         </Heading>
         <Paragraph>
           <MagicText>
-            Pipline will go here!
+            If you're here right now, you're early! This feature is not yet complete!
           </MagicText>
         </Paragraph>
       </PageHeader>

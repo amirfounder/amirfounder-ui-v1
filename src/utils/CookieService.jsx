@@ -17,3 +17,7 @@ export const getCookieValue = (cookieName) => {
   }
   return cookie.replace(`${cookieName}=`, '')
 }
+
+export const setCookie = (label, value, expirationDate=new Date(9999, 12, 12)) => {
+  document.cookie = `${label}=${value};expires=${expirationDate}`
+}

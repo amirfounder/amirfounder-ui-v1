@@ -41,7 +41,7 @@ const PipelineBoard = () => {
                 ${styles.column}
               `}
             >
-              {`Project ${index}`}
+              Coming Soon!
             </div>
           ))}
         </div>

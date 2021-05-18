@@ -1,0 +1,18 @@
+.main {
+  border-top: 1px solid #ddd;
+  min-height: calc(10vh - 1px);
+  padding: 0 var(--side-padding);
+  display: grid;
+  align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

@@ -1,18 +1,20 @@
 import React from 'react'
 import styles from './App.module.scss';
-import { Switch, Route } from 'react-router-dom';
-import Home from '../pages/home/Home';
-import Header from '../blocks/header/Header';
-import About from '../pages/about/About';
-import Projects from '../pages/projects/Projects';
-import Contact from '../pages/contact/Contact';
-import Footer from '../blocks/footer/Footer';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import Home from '../components/pages/home/Home';
+import Header from '../components/blocks/header/Header';
+import About from '../components/pages/about/About';
+import Projects from '../components/pages/projects/Projects';
+import Contact from '../components/pages/contact/Contact';
+import Footer from '../components/blocks/footer/Footer';
 import { useEffect } from 'react';
-import Page from '../wrappers/custom-wrappers/page/Page';
-import { useMainContext } from '../../context/MainContext';
-import { getCookieValue } from '../../utils/CookieService';
-import PageNotFound from '../pages/page-not-found/PageNotFound';
-import Pipeline from '../pages/pipeline/Pipeline';
+import Page from '../components/wrappers/custom-wrappers/page/Page';
+import { useMainContext } from '../context/MainContext';
+import { getCookieValue } from '../utils/CookieService';
+import PageNotFound from '../components/pages/page-not-found/PageNotFound';
+import Pipeline from '../components/pages/pipeline/Pipeline';
+import IdleClicker from '../idle-clicker/IdleClicker';
+import GamingHeader from '../components/blocks/gaming-header/GamingHeader';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
     setThemeColor,
     setThemeHighlightColor
   } = useMainContext()
+
+  const location = useLocation()
 
   useEffect(() => {
     console.log('You\re a wizard, Harry!... https://rb.gy/w7s3bv')
@@ -34,6 +38,7 @@ function App() {
   return (
     <div className={styles.main}>
       <Header />
+      {location.pathname === '/idle-clicker' && <GamingHeader />}
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" render={() => <Page><About /></Page>}/>
@@ -41,6 +46,8 @@ function App() {
           <Route exact path="/pipeline" render={() => <Page><Pipeline /></Page>} />
           <Route exact path="/contact" render={() => <Page><Contact /></Page>} />
           <Route exact path="/page-not-found" render={() => <Page><PageNotFound /></Page>} />
+          
+          <Route exact path="/idle-clicker" component={IdleClicker}/>
           <Route path="/" render={() => <Page><PageNotFound /></Page>} />
         </Switch>
       <Footer />
