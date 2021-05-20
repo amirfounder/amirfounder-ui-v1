@@ -8,7 +8,7 @@ const GamingHeader = () => {
 
   const location = useLocation()
 
-  const [gameTitle, setGameTitle] = useState(getGameTitle(location.pathname))
+  const [gameTitle] = useState(getGameTitle(location.pathname))
 
   return(
     <div className={styles.main}>

@@ -12,14 +12,6 @@ const PipelineBoard = () => {
     'Done',
   ])
 
-  const [projects, setProjects] = useState({
-    backlogProjects: [],
-    startedProjects: [],
-    completed25Projects: [],
-    completed50Projects: [],
-    completed75Projects: []
-  })
-
   return(
     <div className={styles.main}>
       <div className={styles.grid}>
@@ -35,13 +27,13 @@ const PipelineBoard = () => {
           ))}
         </div>
         <div className={styles.content}>
-          {stages.map((stage, index) => (
+          {stages.map(() => (
             <div
               className={`
                 ${styles.column}
               `}
             >
-              Coming Soon!
+              No projects yet...
             </div>
           ))}
         </div>
