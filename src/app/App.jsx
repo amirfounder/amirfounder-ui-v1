@@ -13,7 +13,7 @@ import { useMainContext } from '../context/MainContext';
 import { getCookieValue } from '../utils/CookieService';
 import PageNotFound from '../components/pages/page-not-found/PageNotFound';
 import Pipeline from '../components/pages/pipeline/Pipeline';
-import IdleClicker from '../idle-clicker/IdleClicker';
+import IdleClicker from '../components/idle-clicker/IdleClicker';
 import GamingHeader from '../components/blocks/gaming-header/GamingHeader';
 
 function App() {

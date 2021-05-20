@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { useIdleClickerContext } from '../context/IdleClickerContext'
+import { useIdleClickerContext } from '../../context/IdleClickerContext'
 import styles from './IdleClicker.module.scss'
-import { getCookieValue, setCookie } from '../utils/CookieService'
+import { getCookieValue, setCookie } from '../../utils/CookieService'
 
 const IdleClicker = () => {
 
