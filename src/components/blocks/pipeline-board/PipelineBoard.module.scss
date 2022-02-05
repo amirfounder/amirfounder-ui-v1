@@ -1,9 +1,9 @@
 .main {
   background-color: #f4f4f4;
+  opacity: 0;
   animation-name: fadeIn;
   animation-duration: 2s;
   animation-delay: 1.5s;
-  opacity: 0;
   animation-fill-mode: forwards;
 }
 
